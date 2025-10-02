@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="RPS.css">
+</head>
+
+<body>
+    <!-- Buttons -->
+    <div class="btnDiv">
+        <button onclick="btnClick('rock')" id="rockBtn">
+            <img src="./RPS-images/rockEmoji-removebg-preview.png" alt="rock emoji">
+        </button>
+        <button onclick="btnClick('paper')" id="paperBtn">
+            <img src="./RPS-images/paper-removebg-preview.png" alt="paper emoji">
+        </button>
+        <button onclick="btnClick('scissors')" id="scissorsBtn">
+            <img src="./RPS-images/scissors-removebg-preview.png" alt="scissors emoji">
+        </button>
+    </div>
+
+    <!-- Scoreboard -->
+    <div class="others">
+        <h3>
+            <span id="win">win: 0</span> &nbsp;
+            <span id="loss">loss: 0</span> &nbsp;
+            <span id="tie">tie: 0</span>
+        </h3><br>
+        <button id="reset">reset count</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="resultModal" class="hidden modal-overlay">
+        <div class="modal-content">
+            <h2 id="modalOutput"></h2>
+            <button id="continueBtn">Continue</button>
+        </div>
+    </div>
+
+    <script src="RPS.js"></script>
+</body>
+
+</html>
